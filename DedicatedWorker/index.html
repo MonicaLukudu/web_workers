@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DedicatedWorker</title>
+</head>
+<body>
+    <h1>Dedicated Worker</h1>
+    <button id="calcBtn">Start Huge Calulation</button>
+    <button onclick="alert('The UI is not frozen!....')">Check Responsiveness</button>
+    <p>Result: <strong id="result">Waiting</strong></p>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Main Thread Blocking Demo</title>
+</head>
+<body>
+    
+    <button id="freezeBtn">Run Heavy Task (Freeze UI)</button>
+
+    <p>Status: <strong id="status">Idle</strong></p>
+    <p>Result: <span id="result">---</span></p>
+
+    <script>
+        const btn = document.getElementById('freezeBtn');
+        const statusText = document.getElementById('status');
+        const resultText = document.getElementById('result');
+
+        btn.onclick = function() {
+            // This change might not even show up until the loop ends 
+            // because the browser is too busy to re-draw the text!
+            statusText.textContent = "BUSY... (Everything is frozen)";
+            statusText.style.color = "red";
+
+            // --- THE INTENTIONAL FREEZE ---
+            let sum = 0;
+            const iterations = 50000000000; 
+            
+            for (let i = 0; i < iterations; i++) {
+                sum += i;
+            }
+            // ------------------------------
+
+            resultText.textContent = sum.toLocaleString();
+            statusText.textContent = "Finished!";
+            statusText.style.color = "green";
+        };
+    </script>
+
+</body>
+</html> -->
