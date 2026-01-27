@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shared Worker</h1>
+    <p>Open this page in multiple tabs!</p>
+    <button id="addBtn">Add to Shared Counter</button>
+    <p>Current Shared Count: <strong id="count">0</strong></p>
+
+    <script src="/SharedWorker/script.js"></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>No Shared Worker (Isolated Tabs)</title>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Local Counter (No Worker)</h1>
+        <p>This data is <strong>private</strong> to this tab.</p>
+        <div id="count">0</div>
+        <br>
+        <button id="addBtn" >Add +1</button>
+    </div>
+
+    <script>
+        // This variable only exists in THIS tab's memory
+        let localCounter = 0;
+
+        const countDisplay = document.getElementById('count');
+        const btn = document.getElementById('addBtn');
+
+        btn.onclick = () => {
+            localCounter++;
+            countDisplay.textContent = localCounter;
+        };
+    </script>
+
+</body>
+</html> -->
